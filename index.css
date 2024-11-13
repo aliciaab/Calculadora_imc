@@ -1,0 +1,90 @@
+/* Importando fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Estilos gerais */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3e8f0; /* Cor de fundo lilás suave */
+  color: #4b2c5c; /* Texto em lilás escuro para contraste */
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #6a3e9b; /* Cor lilás para o título */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos dos campos de entrada e botão */
+label {
+  font-size: 1.2rem;
+  color: #6a3e9b; /* Cor lilás para os labels */
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #d5a6d8;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  background-color: #6a3e9b; /* Cor lilás para o botão */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #8a53b4; /* Tom mais escuro de lilás no hover */
+}
+
+/* Estilo para mostrar o resultado */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Inicialmente invisível */
+}
+
+/* Estilos para as diferentes classificações do IMC */
+.abaixo-peso {
+    background-color: #d8a0d1; /* Lilás claro */
+    border: 1px solid #a15a8c;
+    color: #4b2c5c;
+  }
+  
+  .normal {
+    background-color: #b3c6f0; /* Azul claro */
+    border: 1px solid #4a75b4;
+    color: #2d3e56;
+  }
+  
+  .sobrepeso {
+    background-color: #f7cc80; /* Amarelo */
+    border: 1px solid #e1a234;
+    color: #5d3a00;
+  }
+  
+  .obesidade {
+    background-color: #ff8c8c; /* Vermelho claro */
+    border: 1px solid #e04f5f;
+    color: #660000;
+  }
+  
